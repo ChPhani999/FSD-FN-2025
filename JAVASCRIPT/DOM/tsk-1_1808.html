@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table model</title>
+</head>
+<body>
+<table border="2" cellpadding="4">
+	<th>Course name</th>
+	<th>Course number</th>
+	<th>Course fees</th>
+	<th>place</th>
+	<tbody id="tbdy">
+		<td> </td>
+	</tbody>
+</table>
+<script type="text/javascript">
+	var obj=[{
+   		'Course name':'chphani',
+   		'Course number':'21P577',
+   		'Course fees':'ACET',
+   		'place':'cse',
+   		
+
+   	},
+   	{
+   		'Course name':'chphani',
+   		'Course number':'21P577',
+   		'Course fees':'ACET',
+   		'place':'cse'
+
+   	},
+   	{
+   		'Course name':'chphani',
+   		'Course number':'21P577',
+   		'Course fees':'ACET',
+   		'place':'cse'
+
+   	},
+   	{
+   		'Course name':'chphani',
+   		'Course number':'21P577',
+   		'Course fees':'ACET',
+   		'place':'cse'
+
+   	},
+   	{
+   		'Course name':'chphani',
+   		'Course number':'21P577',
+   		'Course fees':'ACET',
+   		'place':'cse'
+
+   	}]
+   let a=document.getElementsByTagName('td');
+    console.log(a);
+   	for (var i = 0; i < obj.length; i++) 
+    {
+     
+        for (var j=0;j<obj.length;j++)
+        {
+           a[i].innerText= document.write(obj[i].Course name+obj[i].Course number+obj[i].Course fees+obj[i].place);
+        }
+    
+    }
+</script>
+
+</body>
+</html>
