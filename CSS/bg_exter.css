@@ -1,0 +1,17 @@
+/*.main{
+	background-image: url('logothub.png');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	border:2px solid rgb(20, 200, 46);
+
+}
+
+ p{
+ 	border:5px solid greenyellow;
+ }*/
+ #br{
+	 border:10px;
+	 border-color: skyblue;
+     border-style:dashed;
+}
