@@ -1,0 +1,46 @@
+p{
+	font-size: 20px;
+}
+.pnr{
+	background-color: white;
+	border: 2px solid darkred;
+	border-radius: 5px;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 20px #888888;
+	display: flex;
+	color: rgb(99, 98, 112);
+
+}
+.float-left{
+	float: left;
+	padding: 3px;
+
+}
+.float-right{
+	text-align: end;
+	flex:1;
+	float: inline-end;
+	padding:5px;
+}
+body{
+	background-color: rgb(240, 245, 251);
+}
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+.yellow{
+	color: yellow;
+}
+.blue{
+	color: blue;
+}
+#pr{
+ 
+ margin-top:20px;
+ margin-left:-100px;
+
+}

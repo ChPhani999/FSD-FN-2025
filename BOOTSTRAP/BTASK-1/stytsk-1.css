@@ -1,0 +1,85 @@
+.col-md-6{
+
+	/*0*/;
+}
+img{
+      width: 400px;
+      height: 300px;
+      border-radius:20px;
+      align-content: center;
+      border: 2px solid black;
+      margin-top: 50px;
+
+}
+#head1{
+    
+      font-size:36px;
+}
+#snihead{
+
+	font-size: 10px;
+}
+#fn{
+
+	margin-top: 81px;
+}
+#ln{
+
+	margin-top: 81px;
+      margin-left:-15px;
+}
+#pswrd{
+
+      margin-top: 20px;
+}
+#pswrd1{
+
+      margin-top: 20px;
+      margin-left:-15px;
+}
+button{
+
+      margin-top:20px;
+      margin-left:150px;
+}
+#acc{
+
+      border-radius:40px;
+      margin-top: 10px;
+      margin-left: 10px;      
+
+      
+}
+#or{
+
+      font-size: 10px;
+      margin-left: 250px;
+      margin-top:-18px;
+
+}
+.hr1{
+      width:150px;
+      margin-left:90px;
+
+}
+.hr2{
+      width: 150px;
+      margin-top:;
+      margin-left:270px;
+      margin-top:-20px;
+}
+#fb{
+
+      border-radius:40px;
+      margin-top: 10px;
+      margin-left:10px;  
+}
+
+#alread
+{
+      font-size:20px;
+      text-align:center;
+
+      margin-top: 10px;
+
+}
