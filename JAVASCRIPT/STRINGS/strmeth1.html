@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Table model for strings
+	</title>
+</head>
+<body>
+	<h3>String Methods</h3>
+   <table border="1 " cellspacing="0" cellpadding="4">
+   	<tr>
+   	<td>d</td>
+   	<td>r</td>
+   	<td>i</td>
+   	<td>v</td>
+   	<td>e</td>
+   	<td>&nbsp</td>
+   	<td>r</td>
+   	<td>e</td>
+   	<td>a</td>
+   	<td>d</td>
+   	<td>y</td>
+    </tr>
+    <tr>
+   	<td>0</td>
+   	<td>1</td>
+   	<td>2</td>
+   	<td>3</td>
+   	<td>4</td>
+   	<td>5</td>
+   	<td>6</td>
+   	<td>7</td>
+   	<td>8</td>
+   	<td>9</td>
+   	<td>10</td>
+    </tr>
+      <tr>
+    <td>-11</td>
+    <td>-10</td>
+    <td>-9</td>
+    <td>-8</td>
+    <td>-7</td>
+    <td>-6</td>
+    <td>-5</td>
+    <td>-4</td>
+    <td>-3</td>
+    <td>-2</td>
+    <td>-1</td>
+    </tr>
+
+   </table>
+   <script type="text/javascript">
+   	function getstr(str) {
+
+   		// body...
+   		document.write("<br>"+str+"<br>")
+   	}
+   	let name='Drive ready';
+   	let name1=' FN';
+   	let name2=' batch ';
+   	let name3=' FSD';
+   	getstr("Original String="+name);
+   	getstr("length of string="+name.length)
+   	getstr("character at 2nd index="+name.charAt(2))
+   	getstr("index of specific character(y)="+name.indexOf('y'))
+   	getstr(" last index of specific character(r)="+name.lastIndexOf('r'))
+    getstr("lower case="+name.toLowerCase())
+    getstr("upper case="+name.toUpperCase())
+    getstr("concate of 1 strings="+name.concat(name1))
+    getstr("concate of 2 strings="+name.concat(name1,name2))
+    getstr("concate of 3 strings="+name.concat(name1,name2,name3))
+    getstr("trim() method="+name.trim())
+    console.log(name.split(""));
+    let name4='durga&phani,sandy';
+    console.log(name4.split("&"));//[0]=>durga,phani
+    console.log(name4.split(","));//[0]=>durga&phani [1]=>sandy
+    console.log(name.startsWith('D'));
+    console.log(name.startsWith('d'));
+    console.log(name.endsWith('r'));
+    console.log(name.endsWith('y'));
+    getstr('slice of strings='+name.slice(1,4))  //1,4-1=3 
+    getstr('slice of strings='+name.slice(-4,-2))
+    getstr('substring of strings='+name.substring(4,2));
+    getstr('includes of strings='+name.includes('ready'));
+    getstr('Asciicode of string='+name.charCodeAt('D'));
+    getstr('repeats of strings='+name.repeat(2))
+    getstr('Substring of string='+name.substring(1,5));//(1,4)
+    getstr('Substring of string='+name.substring(5,1));//
+    getstr('Substring of string with -ve index='+name.substring(-1));
+    getstr("substr of string="+name.substr(2,7));
+    getstr("include of string:"+name.includes('ready'))
+
+
+
+    getstr('repeat of string='+name.repeat(2));
+    //replace
+    getstr('replace of a string='+name.replace('ready','courses'));
+   </script>
+</body>
+</html>
