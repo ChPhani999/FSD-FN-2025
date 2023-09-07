@@ -1,0 +1,9 @@
+event is nothing about action.
+we have 3 ways of handle events.
+1.inline event handlers(By using attributes in html)
+ex:<button onclick="javascript">
+2.by using event properties in js
+ex:let btn=document.getElementById('btn_id')
+       btn.onclick=functionname/anonymous function
+3.By using addEventListener() method in js
+ex:let btn=document.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>unordered list</title>
+</head>
+<body>
+        
+        <ul id="myUL">
+        </ul>
+ <script type="text/javascript">
+        let trainers=['venky','divya','ajay','vinay'];
+        let names=trainers.map(function(ele)
+        {
+                return ele;
+        })
+        let trainers1=[{
+                'name':'divya',
+                'rollno':'1234'
+        },
+        {
+                'name':'kiran',
+        'rollno':'4444'
+ 
+        }
+        ]
+        function printData() {
+                let ul = document.getElementById("myUL");
+                trainers1.map(function(individual_trainee,i,arr){
+                        let li = document.createElement("li");
+                        li.innerHTML = individual_trainee.name+" "+individual_trainee.rollno;
+                        ul.appendChild(li);
+                });
+        }
+        printData();
+ </script>
+</body>
+</html>

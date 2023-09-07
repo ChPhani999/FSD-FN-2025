@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindrome num or not</title>
+</head>
+<body> 
+	<h4>Palindrome number checker</h4>
+	<script type="text/javascript">
+  const n = prompt("enter number to check:");
+  function isPalindrome(n)
+  {
+
+      const nString = n.toString();
+      const revString=nString.split('').reverse().join('');
+      return nString === revString;
+}
+
+
+if (isPalindrome(n)) {
+   document.write(n + " is a palindrome.");
+} else {
+   document.write(n + " is not a palindrome.");
+}
+
+	</script>
+
+</body>
+</html>

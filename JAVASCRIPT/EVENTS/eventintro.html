@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event handlers</title>
+</head>
+<body>
+
+	 <!-- inline event handlers -->
+	 <!-- <button onclick="test()">click here</button>
+
+	 <script type="text/javascript">
+	 	function test(){
+	 		alert("testing...")
+	 		document.body.style.background='blue'
+	 		// document.write("test case passed....")
+	 	}
+	 </script> -->
+
+	 
+
+	 <!-- 2nd method  -->
+	 <!-- <button id="btn_id">Click here</button>
+	 <script type="text/javascript">
+	 	let btn=document.getElementById('btn_id');
+	 	btn.onclick=function(){
+
+	 		alert("Hello")
+	 		document.body.style.background='green';
+	 	}
+	 </script> -->
+
+
+
+    <!-- 3rd method -->
+    <button id="btn_id1">Click 2</button>
+    <script type="text/javascript">
+    let btn=document.getElementById('btn_id1')
+    btn.addEventListener('click',test)
+    function test()
+    {
+    	alert("testing...")
+    	document.body.style.background='red';
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ordered List</title>
+</head>
+<body>
+        <ol class="list">
+        </ol>
+        <script type="text/javascript">
+        let trainers1=[{
+ 		'name':'divya',
+ 		'rollno':'1234'
+ 	},
+ 	{
+ 		'name':'kiran',
+        'rollno':'4444'
+ 
+ 	}
+ 	]
+ 
+ 	const list = document.querySelector("ol");
+ 
+ 	function addItems(trainers) {
+ 		trainers.map((trainer) => {
+ 			const item = document.createElement("li");
+ 			item.innerHTML = `
+ 				${trainer.name} - ${trainer.rollno}
+ 			`;
+ 			list.appendChild(item);
+ 		});
+ 	}
+ 
+ 	addItems(trainers1);
+        </script>
+</body>
+</html>

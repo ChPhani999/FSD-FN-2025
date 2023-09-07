@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+	<h1>Array Methods|map()</h1>		
+	<p>This method creates new array and return it after iteration will be completed.</p>
+
+</body>
+ <script type="text/javascript">
+ 	let trainers=['venky','divya','ajay','vinay'];
+ 	let names=trainers.map(function(ele)
+ 	{
+ 		console.log(ele)
+ 	})
+ 	let trainers1=[{
+ 		'name':'divya',
+ 		'rollno':'1234'
+ 	},
+ 	{
+ 		'name':'kiran',
+        'rollno':'4444'
+ 
+ 	}
+ 	]
+ 	trainers1.map(function(individual_trainee,i,arr){
+ 		console.log(individual_trainee.name+" "+individual_trainee.rollno)
+ 	})
+ 	
+ </script>
+</html>

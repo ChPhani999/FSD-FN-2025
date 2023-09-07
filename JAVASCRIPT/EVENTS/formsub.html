@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form validation</title>
+	<style type="text/css">
+		.div1{
+
+			height: 600px;
+			width: 400px;
+			background-color: #252B48;
+			color: white;
+			border: 2px solid black;
+			border-radius:62px ;
+
+		}
+		.div2{
+
+			width: 400px;
+			height:123px;
+			background-color: #F0FF42;
+			border-radius:150px;
+			float: left;
+			
+		}
+		h4{
+			font-family: cursive;
+			font-size:36px;
+			color: #379237;
+			margin-top:33px;
+
+		}
+	</style>
+
+</head>
+<body>
+	<center><div class="div1">
+	<div class="div2"><h4>OWL CODER 3.0</h4>
+    <h6 style="font-size: 20px;color:#379237;text-align: center;margin-top:-40px;font-family: cursive;">Registration</h6>
+	</div>
+    <form id="Myform">
+ 	First Name: <input type="text" name="fname" style="margin-top:25px;font-size: 20px;"><br><br>
+ 	Last  Name: <input type="text" name="lname" style="font-size:20px" ><br>
+ 	<br>
+ 	Roll Number: <input type="text" name="rno" style="font-size:20px" ><br>
+ 	<br>
+
+ 	
+ 	<select name="colleges" style="margin-top:10px;margin-left:163px">
+ 	<option>----select college----</option>
+			<option value="aec">AEC</option>
+			<option value="acet">ACET</option>
+			<option value="acoe">ACOE</option>
+ 	</select><br><br>
+ 	<h6 style="margin-top:-42px;margin-left:-180px; font-size:20px;">select your college:</h6>
+ 	 Phone Number: <input type="number" name="phn_no" style="font-size:18px;" ><br>
+ 	<br>
+ 	Parent's Number: <input type="number" name="pr_no" style="font-size:18px;" ><br>
+ 	<br>
+ 	<select name="Scholar" style="margin-top:10px;margin-left:180px">
+ 	<option>----Scholar Type----</option>
+			<option value="aec">Day Scholar</option>
+			<option value="acet">Hostel</option>
+			<option value="acoe">Outside Hostel</option>
+ 	</select><br><br>
+    <h6 style="margin-top:-42px;margin-left:-180px; font-size:18px;">select your Scholar Type:</h6>
+
+ 	<input type="button" onclick="formsubmit()" value="submit" style="font-size:25px ; background-color: #D3D04F; font-family:cursive;border-radius: 20px;color: green;">
+
+ </form>
+ </div></center>
+  <script type="text/javascript">
+  	function formsubmit() {
+  		// body...
+  		let form1=document.getElementById('Myform');
+  		form1.submit();
+  		//form1.reset();
+  	}
+  </script>
+
+
+  <!--  <script type="text/javascript">
+  	function validateform() {
+  		// body...
+  		let fname=document.getElementById('fname_id').value;
+  		let lname=document.getElementById('lname_id').value;
+  		
+  		
+  	}
+  </script> -->
+</body>
+</html>
